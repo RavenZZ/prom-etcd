@@ -80,4 +80,5 @@ fabric.properties
 
 
 # ignore etcd data
-/prometheus/tgroups.json
+/prometheus/*
+!/prometheus/prometheus.yml

@@ -26,6 +26,9 @@ func (srvs services) handle(node *etcd.Node, handler func(*etcd.Node)) {
 }
 
 func (srvs services) update(node *etcd.Node) {
+	if !strings.Contains(node.Key, "metrics") {
+		return
+	}
 	i := strings.LastIndex(node.Key, "/")
 	srv := node.Key[:i]
 	instanceID := node.Key[i+1:]
@@ -38,6 +41,9 @@ func (srvs services) update(node *etcd.Node) {
 }
 
 func (srvs services) delete(node *etcd.Node) {
+	if !strings.Contains(node.Key, "metrics") {
+		return
+	}
 	i := strings.LastIndex(node.Key, "/")
 	srv := node.Key[:i]
 	instanceID := node.Key[i+1:]
