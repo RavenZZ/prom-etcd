@@ -10,7 +10,7 @@ import (
 )
 
 var (
-	targetFile = flag.String("target-file", "tgroups.json", "the file that contains the target groups")
+	targetFile = flag.String("target-file", "prometheus/tgroups.json", "the file that contains the target groups")
 )
 
 func Run() {

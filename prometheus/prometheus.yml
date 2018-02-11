@@ -1,0 +1,4 @@
+scrape_configs:
+- job_name: 'default' # Will be overwritten by job label of target groups.
+  file_sd_configs:
+  - names: ['./tgroups.json']
