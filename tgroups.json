@@ -1,1 +1,0 @@
-[{"targets":["http://10.10.203.239:58849"],"labels":{"job":"/services/zhuyingjun/app/http"}},{"targets":["10.10.203.239:58852"],"labels":{"job":"/services/zhuyingjun/app/grpc"}},{"targets":["http://10.10.203.239:58855"],"labels":{"job":"/services/zhuyingjun/app/debug"}}]
